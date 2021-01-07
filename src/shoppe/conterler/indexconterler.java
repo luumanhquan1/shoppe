@@ -65,109 +65,57 @@ public class indexconterler {
         } catch (IOException ex) {
             Logger.getLogger(indexconterler.class.getName()).log(Level.SEVERE, null, ex);
         }
-        view.getBtngiohang().addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e); 
-                if(taikhoan!=null){
-                try {
-                    giohangview giohang=new giohangview();
-                    giohangconterler control=new giohangconterler(giohang);
-            control.setTaikhoan(taikhoan);
-                giohang.setVisible(true);
-                view.setVisible(false);
-                } catch (IOException ex) {
-                   
-                }
-                }
-                else{
-                    fromdangnhapview dangnhap=new fromdangnhapview();
-                    dangnhapconterler control=new dangnhapconterler(dangnhap);
-                    dangnhap.setVisible(true);
-                    view.setVisible(false);
-                }
-            }
-            
-});
-        view.getBtnxemthem().addActionListener(a1 -> xemthem());
-        view.getBtntrangchu().addMouseListener(new MouseAdapter() {
+         view.getBtngiohang().addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
-                if (view.getDangnhap().isVisible()) {
-                    view.setVisible(false);
-                    indexview t = new indexview();
-                    indexconterler control = new indexconterler(t);
-                    t.setVisible(true);
-                } else {
-                    reloat();
-                }
-
+               giohang();
+            }
+        });
+        view.getBtnxemthem().addActionListener(a1 -> xemthem());
+         view.getBtntrangchu().addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                trangchu();
             }
         });
         view.getBtndangxuat().addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
-                view.setVisible(false);
-                indexview t = new indexview();
-                indexconterler control = new indexconterler(t);
-                t.setVisible(true);//To change body of generated methods, choose Tools | Templates.
+                 dangxuat();
             }
-
         });
-        view.getDangnhap().addMouseListener(new MouseAdapter() {
+      view.getDangnhap().addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
-                chuyenform();//To change body of generated methods, choose Tools | Templates.
-            }
-
-            private void chuyenform() {
-                fromdangnhapview t = new fromdangnhapview();
-                dangnhapconterler control = new dangnhapconterler(t);
-                t.setVisible(true);
-                view.setVisible(false);
+              dangnhap();
             }
         });
-        view.getDangki().addMouseListener(new MouseAdapter() {
+      view.getDangki().addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
                 dangki();//To change body of generated methods, choose Tools | Templates.
-            }
-
-            private void dangki() {
-                fromdangkiview t1 = new fromdangkiview();
-                dangkiconterler control1 = new dangkiconterler(t1);
-                t1.setVisible(true);
-                view.setVisible(false);
-            }
+            }  
         });
         view.getBtntimkiem().addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
-                timkiem();
+             timkiem();
             }
         });
-        view.getBtnthemsanpham().addMouseListener(new MouseAdapter() {
+       view.getBtnthemsanpham().addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
-                if (view.getDangnhap().isVisible()) {
-                    fromdangnhapview t = new fromdangnhapview();
-                    dangnhapconterler control = new dangnhapconterler(t);
-                    view.setVisible(false);
-                } else {
-                    themsanpham t = new themsanpham();
-                    themsanphamcontroler control = new themsanphamcontroler(t);
-                    t.setVisible(true);
-                    view.setVisible(false);
-                    control.setTaikhoan(taikhoan);
-                }
+                 themsp();
             }
         });
+       
     }
 
     public void setTaikhoan(String taikhoan) {
@@ -726,6 +674,7 @@ public class indexconterler {
             view.getBtnxemthem().setVisible(false);
         }
     }
+
     private void xemthem() {
         xemthem = xemthem + 12;
 
@@ -736,6 +685,7 @@ public class indexconterler {
         }
 
     }
+
     public void timkiem() {
         String tensptimkiem = view.getTxttimkiem().getText().toLowerCase();
         for (int i = 0; i < listsp.getListsp().size(); i++) {
@@ -1259,7 +1209,7 @@ public class indexconterler {
                         } catch (IOException ex) {
                             Logger.getLogger(indexconterler.class.getName()).log(Level.SEVERE, null, ex);
                         }
-                       
+
                         t1.setTen(Ten);
                         t1.setTaikhoan(taikhoan);
                         t1.setMatkhau(matkhau);
@@ -1323,5 +1273,69 @@ public class indexconterler {
             br.close();
         } catch (Exception e) {
         }
+    }
+
+    public void giohang() {
+                if (taikhoan != null) {
+                    try {
+                        giohangview giohang = new giohangview();
+                        giohangconterler control = new giohangconterler(giohang, taikhoan);
+                        giohang.setVisible(true);
+                        view.setVisible(false);
+                    } catch (IOException ex) {
+                    }
+                } else {
+                    fromdangnhapview dangnhap = new fromdangnhapview();
+                    dangnhapconterler control = new dangnhapconterler(dangnhap);
+                    dangnhap.setVisible(true);
+                    view.setVisible(false);
+                }
+    }
+    public void trangchu() {
+                if (taikhoan==null) {
+                    view.setVisible(false);
+                    indexview t = new indexview();
+                    indexconterler control = new indexconterler(t);
+                    t.setVisible(true);
+                } else {
+                    reloat();
+                }
+    }
+
+    public void dangxuat() {
+                view.setVisible(false);
+                indexview t = new indexview();
+                indexconterler control = new indexconterler(t);
+                t.setVisible(true);//To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void dangnhap() {
+                fromdangnhapview t = new fromdangnhapview();
+                dangnhapconterler control = new dangnhapconterler(t);
+                t.setVisible(true);
+                view.setVisible(false);    
+    }
+
+    public void dangki() {
+                fromdangkiview t1 = new fromdangkiview();
+                dangkiconterler control1 = new dangkiconterler(t1);
+                t1.setVisible(true);
+                view.setVisible(false); 
+    }
+
+    
+
+    public void themsp() {
+                if (view.getDangnhap().isVisible()) {
+                    fromdangnhapview t = new fromdangnhapview();
+                    dangnhapconterler control = new dangnhapconterler(t);
+                    view.setVisible(false);
+                } else {
+                    themsanpham t = new themsanpham();
+                    themsanphamcontroler control = new themsanphamcontroler(t);
+                    t.setVisible(true);
+                    view.setVisible(false);
+                    control.setTaikhoan(taikhoan);
+                }
     }
 }

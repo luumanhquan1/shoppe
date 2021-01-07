@@ -5,6 +5,7 @@
  */
 package shoppe.view;
 
+import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -36,7 +37,7 @@ public class giohangview extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         listgiohang = new javax.swing.JScrollPane();
         jPanel2 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
+        formhang4 = new javax.swing.JPanel();
         anhgiohang4 = new javax.swing.JLabel();
         txttengiohang4 = new javax.swing.JLabel();
         txtgia4 = new javax.swing.JLabel();
@@ -44,7 +45,8 @@ public class giohangview extends javax.swing.JFrame {
         btncong4 = new javax.swing.JLabel();
         txtsoluong4 = new javax.swing.JLabel();
         txttratien4 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
+        cb4 = new javax.swing.JCheckBox();
+        formhang1 = new javax.swing.JPanel();
         anhgiohang1 = new javax.swing.JLabel();
         txttengiohang1 = new javax.swing.JLabel();
         txtgia1 = new javax.swing.JLabel();
@@ -52,7 +54,8 @@ public class giohangview extends javax.swing.JFrame {
         btncong1 = new javax.swing.JLabel();
         txtsoluong1 = new javax.swing.JLabel();
         txttratien1 = new javax.swing.JLabel();
-        jPanel7 = new javax.swing.JPanel();
+        cb1 = new javax.swing.JCheckBox();
+        formhang2 = new javax.swing.JPanel();
         anhgiohang2 = new javax.swing.JLabel();
         txttengiohang2 = new javax.swing.JLabel();
         txtgia2 = new javax.swing.JLabel();
@@ -60,6 +63,8 @@ public class giohangview extends javax.swing.JFrame {
         btncong2 = new javax.swing.JLabel();
         txtsoluong2 = new javax.swing.JLabel();
         txttratien2 = new javax.swing.JLabel();
+        cb2 = new javax.swing.JCheckBox();
+        thongbao = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -74,21 +79,21 @@ public class giohangview extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(1239, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
+                .addContainerGap()
                 .addComponent(jLabel1)
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        formhang4.setBackground(new java.awt.Color(255, 255, 255));
 
         anhgiohang4.setBackground(new java.awt.Color(255, 51, 51));
 
-        txttengiohang4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        txttengiohang4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         txttengiohang4.setText("1111");
 
         txtgia4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -114,67 +119,72 @@ public class giohangview extends javax.swing.JFrame {
         txttratien4.setForeground(new java.awt.Color(255, 51, 51));
         txttratien4.setText("jLabel4");
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(45, 45, 45)
+        javax.swing.GroupLayout formhang4Layout = new javax.swing.GroupLayout(formhang4);
+        formhang4.setLayout(formhang4Layout);
+        formhang4Layout.setHorizontalGroup(
+            formhang4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(formhang4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(cb4)
+                .addGap(12, 12, 12)
                 .addComponent(anhgiohang4, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(formhang4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(formhang4Layout.createSequentialGroup()
+                        .addGroup(formhang4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(formhang4Layout.createSequentialGroup()
                                 .addGap(595, 595, 595)
                                 .addComponent(txtgia4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(247, 247, 247))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formhang4Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btntru4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtsoluong4, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(formhang4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(formhang4Layout.createSequentialGroup()
                                 .addComponent(btncong4, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
                                 .addGap(284, 284, 284))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                                .addComponent(txttratien4, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(126, 126, 126))))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formhang4Layout.createSequentialGroup()
+                                .addComponent(txttratien4, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(27, 27, 27))))
+                    .addGroup(formhang4Layout.createSequentialGroup()
                         .addGap(29, 29, 29)
                         .addComponent(txttengiohang4, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
+        formhang4Layout.setVerticalGroup(
+            formhang4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(formhang4Layout.createSequentialGroup()
+                .addGroup(formhang4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(formhang4Layout.createSequentialGroup()
                         .addGap(87, 87, 87)
                         .addComponent(txttratien4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(3, 3, 3)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(formhang4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(txtsoluong4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(formhang4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(btntru4, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
                                 .addComponent(btncong4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
+                    .addGroup(formhang4Layout.createSequentialGroup()
                         .addGap(74, 74, 74)
                         .addComponent(txtgia4, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
+                    .addGroup(formhang4Layout.createSequentialGroup()
                         .addGap(22, 22, 22)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(formhang4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txttengiohang4, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(anhgiohang4, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(anhgiohang4, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(formhang4Layout.createSequentialGroup()
+                        .addGap(87, 87, 87)
+                        .addComponent(cb4)))
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
-        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
+        formhang1.setBackground(new java.awt.Color(255, 255, 255));
 
         anhgiohang1.setBackground(new java.awt.Color(255, 51, 51));
 
-        txttengiohang1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txttengiohang1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
 
         txtgia1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         txtgia1.setForeground(new java.awt.Color(255, 51, 51));
@@ -195,69 +205,76 @@ public class giohangview extends javax.swing.JFrame {
         txtsoluong1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         txttratien1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        txttratien1.setForeground(new java.awt.Color(255, 51, 51));
         txttratien1.setText("jLabel4");
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(45, 45, 45)
+        javax.swing.GroupLayout formhang1Layout = new javax.swing.GroupLayout(formhang1);
+        formhang1.setLayout(formhang1Layout);
+        formhang1Layout.setHorizontalGroup(
+            formhang1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(formhang1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(cb1)
+                .addGap(12, 12, 12)
                 .addComponent(anhgiohang1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(formhang1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(formhang1Layout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addComponent(txttengiohang1, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(206, 206, 206)
                         .addComponent(txtgia1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(247, 247, 247))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formhang1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btntru1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtsoluong1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(formhang1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(formhang1Layout.createSequentialGroup()
                         .addComponent(btncong1, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
                         .addGap(284, 284, 284))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                        .addComponent(txttratien1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(126, 126, 126))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formhang1Layout.createSequentialGroup()
+                        .addComponent(txttratien1, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(30, 30, 30))))
         );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
+        formhang1Layout.setVerticalGroup(
+            formhang1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(formhang1Layout.createSequentialGroup()
+                .addGroup(formhang1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(formhang1Layout.createSequentialGroup()
                         .addGap(38, 38, 38)
                         .addComponent(txttengiohang1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
+                    .addGroup(formhang1Layout.createSequentialGroup()
                         .addGap(22, 22, 22)
                         .addComponent(anhgiohang1, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
+                    .addGroup(formhang1Layout.createSequentialGroup()
                         .addGap(87, 87, 87)
                         .addComponent(txttratien1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(3, 3, 3)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(formhang1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(txtsoluong1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(formhang1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(btntru1, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
                                 .addComponent(btncong1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
+                    .addGroup(formhang1Layout.createSequentialGroup()
                         .addGap(74, 74, 74)
-                        .addComponent(txtgia1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtgia1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(formhang1Layout.createSequentialGroup()
+                        .addGap(82, 82, 82)
+                        .addComponent(cb1)))
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
-        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
+        formhang2.setBackground(new java.awt.Color(255, 255, 255));
 
         anhgiohang2.setBackground(new java.awt.Color(255, 51, 51));
 
-        txttengiohang2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txttengiohang2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         txttengiohang2.setText("ten");
 
         txtgia2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        txtgia2.setForeground(new java.awt.Color(255, 51, 51));
         txtgia2.setText("gia");
 
         btntru2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -276,59 +293,65 @@ public class giohangview extends javax.swing.JFrame {
         txtsoluong2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         txttratien2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        txttratien2.setForeground(new java.awt.Color(255, 51, 51));
         txttratien2.setText("jLabel4");
 
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(40, 40, 40)
+        javax.swing.GroupLayout formhang2Layout = new javax.swing.GroupLayout(formhang2);
+        formhang2.setLayout(formhang2Layout);
+        formhang2Layout.setHorizontalGroup(
+            formhang2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(formhang2Layout.createSequentialGroup()
+                .addGap(7, 7, 7)
+                .addComponent(cb2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(anhgiohang2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGroup(formhang2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(formhang2Layout.createSequentialGroup()
                         .addGap(33, 33, 33)
                         .addComponent(txttengiohang2, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(206, 206, 206)
                         .addComponent(txtgia2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(247, 247, 247))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
+                    .addGroup(formhang2Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btntru2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtsoluong2, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGroup(formhang2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(formhang2Layout.createSequentialGroup()
                         .addComponent(btncong2, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
                         .addGap(284, 284, 284))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                        .addComponent(txttratien2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(126, 126, 126))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formhang2Layout.createSequentialGroup()
+                        .addComponent(txttratien2, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(33, 33, 33))))
         );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
+        formhang2Layout.setVerticalGroup(
+            formhang2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(formhang2Layout.createSequentialGroup()
+                .addGroup(formhang2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(formhang2Layout.createSequentialGroup()
                         .addGap(38, 38, 38)
                         .addComponent(txttengiohang2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
+                    .addGroup(formhang2Layout.createSequentialGroup()
                         .addGap(87, 87, 87)
                         .addComponent(txttratien2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(3, 3, 3)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(formhang2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(txtsoluong2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(formhang2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(btntru2, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
                                 .addComponent(btncong2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
+                    .addGroup(formhang2Layout.createSequentialGroup()
                         .addGap(74, 74, 74)
                         .addComponent(txtgia2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
+                    .addGroup(formhang2Layout.createSequentialGroup()
                         .addGap(24, 24, 24)
-                        .addComponent(anhgiohang2, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(69, Short.MAX_VALUE))
+                        .addComponent(anhgiohang2, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(formhang2Layout.createSequentialGroup()
+                        .addGap(87, 87, 87)
+                        .addComponent(cb2)))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -337,41 +360,57 @@ public class giohangview extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(formhang4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(formhang1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(formhang2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 130, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(formhang4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(formhang1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(491, Short.MAX_VALUE))
+                .addComponent(formhang2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(518, Short.MAX_VALUE))
         );
 
         listgiohang.setViewportView(jPanel2);
+
+        thongbao.setBackground(new java.awt.Color(255, 102, 102));
+
+        javax.swing.GroupLayout thongbaoLayout = new javax.swing.GroupLayout(thongbao);
+        thongbao.setLayout(thongbaoLayout);
+        thongbaoLayout.setHorizontalGroup(
+            thongbaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1581, Short.MAX_VALUE)
+        );
+        thongbaoLayout.setVerticalGroup(
+            thongbaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 195, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(thongbao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(93, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(listgiohang, javax.swing.GroupLayout.PREFERRED_SIZE, 1447, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41))
+                .addGap(59, 59, 59))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(listgiohang, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 434, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(thongbao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(listgiohang, javax.swing.GroupLayout.PREFERRED_SIZE, 445, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 249, Short.MAX_VALUE))
         );
 
         pack();
@@ -411,7 +450,7 @@ public class giohangview extends javax.swing.JFrame {
             }
         });
     }
-    
+
     public JLabel getAnhgiohang1() {
         return anhgiohang1;
     }
@@ -448,6 +487,22 @@ public class giohangview extends javax.swing.JFrame {
         return btntru4;
     }
 
+    public JCheckBox getCb4() {
+        return cb4;
+    }
+
+    public JPanel getFormhang1() {
+        return formhang1;
+    }
+
+    public JPanel getFormhang2() {
+        return formhang2;
+    }
+
+    public JPanel getFormhang4() {
+        return formhang4;
+    }
+
     public JLabel getjLabel1() {
         return jLabel1;
     }
@@ -458,18 +513,6 @@ public class giohangview extends javax.swing.JFrame {
 
     public JPanel getjPanel2() {
         return jPanel2;
-    }
-
-    public JPanel getjPanel4() {
-        return jPanel4;
-    }
-
-    public JPanel getjPanel6() {
-        return jPanel6;
-    }
-
-    public JPanel getjPanel7() {
-        return jPanel7;
     }
 
     public JScrollPane getListgiohang() {
@@ -524,6 +567,13 @@ public class giohangview extends javax.swing.JFrame {
         return txttratien4;
     }
 
+    public JPanel getThongbao() {
+        return thongbao;
+    }
+
+    
+   
+
    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel anhgiohang1;
@@ -535,13 +585,17 @@ public class giohangview extends javax.swing.JFrame {
     private javax.swing.JLabel btntru1;
     private javax.swing.JLabel btntru2;
     private javax.swing.JLabel btntru4;
+    private javax.swing.JCheckBox cb1;
+    private javax.swing.JCheckBox cb2;
+    private javax.swing.JCheckBox cb4;
+    private javax.swing.JPanel formhang1;
+    private javax.swing.JPanel formhang2;
+    private javax.swing.JPanel formhang4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane listgiohang;
+    private javax.swing.JPanel thongbao;
     private javax.swing.JLabel txtgia1;
     private javax.swing.JLabel txtgia2;
     private javax.swing.JLabel txtgia4;
@@ -555,4 +609,6 @@ public class giohangview extends javax.swing.JFrame {
     private javax.swing.JLabel txttratien2;
     private javax.swing.JLabel txttratien4;
     // End of variables declaration//GEN-END:variables
+
+
 }

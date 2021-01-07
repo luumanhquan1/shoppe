@@ -29,7 +29,7 @@ import shoppe.view.indexview;
  *
  * @author ASUS TUF
  */
-public class xemhangconterler {
+public class xemhangconterler extends indexconterler{
 
     private formxemhang view;
     private String thongtinsp;
