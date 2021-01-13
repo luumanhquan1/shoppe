@@ -27,6 +27,17 @@ public class dangnhapconterler {
     private String matkhau;
     public dangnhapconterler(fromdangnhapview view) {
         this.view = view;
+        view.getBtntrangchudangnhap().addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e); //To change body of generated methods, choose Tools | Templates.
+                indexview index=new indexview();
+                indexconterler control=new indexconterler(index);
+                index.setVisible(true);
+                view.setVisible(false);
+            }
+
+        });
         view.getBtdangki().addActionListener(a2->chuyenfrom());
         view.getBtndangnhap().addActionListener(a1->login());
         view.getBtndoimatkhau().addMouseListener(new MouseAdapter() {
@@ -39,6 +50,7 @@ public class dangnhapconterler {
   view.setVisible(false);
             }          
 });
+        
     }
 
     dangnhapconterler(indexview view) {

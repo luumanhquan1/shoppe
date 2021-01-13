@@ -23,6 +23,7 @@ import javax.swing.JOptionPane;
 import shoppe.model.giohangmodel;
 import shoppe.view.formxemhang;
 import shoppe.view.fromdangnhapview;
+import shoppe.view.giohangview;
 import shoppe.view.indexview;
 
 /**
@@ -68,6 +69,27 @@ public class xemhangconterler extends indexconterler{
             }
 
         });
+        view.getBtngiohang().addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e); //To change body of generated methods, choose Tools | Templates.
+                 if (taikhoan != null) {
+                    try {
+                        giohangview giohang = new giohangview();
+                        giohangconterler control = new giohangconterler(giohang, taikhoan,matkhau);
+                        giohang.setVisible(true);
+                        view.setVisible(false);
+                    } catch (IOException ex) {
+                    }
+                } else {
+                    fromdangnhapview dangnhap = new fromdangnhapview();
+                    dangnhapconterler control = new dangnhapconterler(dangnhap);
+                    dangnhap.setVisible(true);
+                    view.setVisible(false);
+                }
+            }
+            
+});
         view.getBtntrangchu().addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {

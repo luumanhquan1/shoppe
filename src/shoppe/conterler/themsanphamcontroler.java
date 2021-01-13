@@ -40,6 +40,7 @@ private int kiemtra=0;
     
     public themsanphamcontroler(themsanpham view) {
         this.view = view;
+        
         view.getJlbanhbia().addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {

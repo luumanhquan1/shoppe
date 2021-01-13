@@ -5,6 +5,7 @@
  */
 package shoppe.view;
 
+import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -34,7 +35,7 @@ public class giohangview extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        trangchu = new javax.swing.JLabel();
         listgiohang = new javax.swing.JScrollPane();
         jPanel2 = new javax.swing.JPanel();
         formhang4 = new javax.swing.JPanel();
@@ -65,12 +66,14 @@ public class giohangview extends javax.swing.JFrame {
         txttratien2 = new javax.swing.JLabel();
         cb2 = new javax.swing.JCheckBox();
         thongbao = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        btnmuangay = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/trangchugiohang.png"))); // NOI18N
+        trangchu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/trangchugiohang.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -78,14 +81,14 @@ public class giohangview extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(27, 27, 27)
-                .addComponent(jLabel1)
+                .addComponent(trangchu)
                 .addContainerGap(1239, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(trangchu)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -378,17 +381,33 @@ public class giohangview extends javax.swing.JFrame {
 
         listgiohang.setViewportView(jPanel2);
 
-        thongbao.setBackground(new java.awt.Color(255, 102, 102));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/giohangtrong.png"))); // NOI18N
+
+        btnmuangay.setBackground(new java.awt.Color(255, 102, 102));
+        btnmuangay.setText("Mua Ngay");
 
         javax.swing.GroupLayout thongbaoLayout = new javax.swing.GroupLayout(thongbao);
         thongbao.setLayout(thongbaoLayout);
         thongbaoLayout.setHorizontalGroup(
             thongbaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1581, Short.MAX_VALUE)
+            .addGroup(thongbaoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(thongbaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, thongbaoLayout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(659, 659, 659))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, thongbaoLayout.createSequentialGroup()
+                        .addComponent(btnmuangay)
+                        .addGap(736, 736, 736))))
         );
         thongbaoLayout.setVerticalGroup(
             thongbaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 195, Short.MAX_VALUE)
+            .addGroup(thongbaoLayout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(jLabel2)
+                .addGap(18, 18, 18)
+                .addComponent(btnmuangay)
+                .addContainerGap(99, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -410,7 +429,7 @@ public class giohangview extends javax.swing.JFrame {
                 .addComponent(thongbao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(listgiohang, javax.swing.GroupLayout.PREFERRED_SIZE, 445, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 249, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -449,6 +468,22 @@ public class giohangview extends javax.swing.JFrame {
                 new giohangview().setVisible(true);
             }
         });
+    }
+
+    public JCheckBox getCb1() {
+        return cb1;
+    }
+
+    public JButton getBtnmuangay() {
+        return btnmuangay;
+    }
+
+    public JCheckBox getCb2() {
+        return cb2;
+    }
+
+    public JLabel getTrangchu() {
+        return trangchu;
     }
 
     public JLabel getAnhgiohang1() {
@@ -504,7 +539,7 @@ public class giohangview extends javax.swing.JFrame {
     }
 
     public JLabel getjLabel1() {
-        return jLabel1;
+        return trangchu;
     }
 
     public JPanel getjPanel1() {
@@ -582,6 +617,7 @@ public class giohangview extends javax.swing.JFrame {
     private javax.swing.JLabel btncong1;
     private javax.swing.JLabel btncong2;
     private javax.swing.JLabel btncong4;
+    private javax.swing.JButton btnmuangay;
     private javax.swing.JLabel btntru1;
     private javax.swing.JLabel btntru2;
     private javax.swing.JLabel btntru4;
@@ -591,11 +627,12 @@ public class giohangview extends javax.swing.JFrame {
     private javax.swing.JPanel formhang1;
     private javax.swing.JPanel formhang2;
     private javax.swing.JPanel formhang4;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane listgiohang;
     private javax.swing.JPanel thongbao;
+    private javax.swing.JLabel trangchu;
     private javax.swing.JLabel txtgia1;
     private javax.swing.JLabel txtgia2;
     private javax.swing.JLabel txtgia4;

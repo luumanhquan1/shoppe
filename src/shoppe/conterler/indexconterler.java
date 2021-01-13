@@ -1279,7 +1279,7 @@ public class indexconterler {
                 if (taikhoan != null) {
                     try {
                         giohangview giohang = new giohangview();
-                        giohangconterler control = new giohangconterler(giohang, taikhoan);
+                        giohangconterler control = new giohangconterler(giohang, taikhoan,matkhau);
                         giohang.setVisible(true);
                         view.setVisible(false);
                     } catch (IOException ex) {
