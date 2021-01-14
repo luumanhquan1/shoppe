@@ -59,7 +59,6 @@ public class formxemhang extends javax.swing.JFrame {
         txtgia = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         btnthemgiohang = new javax.swing.JButton();
-        btnmuahang = new javax.swing.JButton();
         txttennguoiban = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
@@ -248,7 +247,7 @@ public class formxemhang extends javax.swing.JFrame {
         );
         imgsanphamLayout.setVerticalGroup(
             imgsanphamLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbimgsp, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lbimgsp, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 604, Short.MAX_VALUE)
         );
 
         txttensp.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -285,8 +284,6 @@ public class formxemhang extends javax.swing.JFrame {
 
         btnthemgiohang.setText("THÊM VÀO GIỎ HÀNG");
 
-        btnmuahang.setText("MUA HÀNG");
-
         txttennguoiban.setBackground(new java.awt.Color(255, 102, 102));
         txttennguoiban.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         txttennguoiban.setForeground(new java.awt.Color(255, 51, 51));
@@ -316,31 +313,29 @@ public class formxemhang extends javax.swing.JFrame {
                                     .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txttensp, javax.swing.GroupLayout.PREFERRED_SIZE, 998, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(69, 69, 69)
-                                .addComponent(btnthemgiohang, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(52, 52, 52)
-                                .addComponent(btnmuahang, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(140, 140, 140)
+                                .addComponent(btnthemgiohang, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(69, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(imgsanpham, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(imgsanpham, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(34, 34, 34)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txttennguoiban)
+                            .addComponent(jLabel4))
+                        .addContainerGap(45, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(txttensp, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(375, 375, 375)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnthemgiohang, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
-                            .addComponent(btnmuahang, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addGap(34, 34, 34)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txttennguoiban)
-                    .addComponent(jLabel4))
-                .addContainerGap(45, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnthemgiohang, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(92, 92, 92))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -413,9 +408,7 @@ public class formxemhang extends javax.swing.JFrame {
         return btngiohang;
     }
 
-    public JButton getBtnmuahang() {
-        return btnmuahang;
-    }
+ 
 
     public JLabel getTxttennguoiban() {
         return txttennguoiban;
@@ -508,7 +501,6 @@ public class formxemhang extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel btndangxuat;
     private javax.swing.JLabel btngiohang;
-    private javax.swing.JButton btnmuahang;
     private javax.swing.JButton btnthemgiohang;
     private javax.swing.JLabel btnthemsanpham;
     private javax.swing.JLabel btntimkiem;
