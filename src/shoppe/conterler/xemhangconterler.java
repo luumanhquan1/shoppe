@@ -164,11 +164,9 @@ public class xemhangconterler extends indexconterler{
         String mess = "";
         if (taikhoan != null) {
             String giohang = taikhoan + "$" + thongtinsp;
-            System.out.println("" + giohang);
             giohangmodel gh = new giohangmodel();
             gh.docfile();
             gh.them(giohang);
-            System.out.println("" + gh.getListgiohang());
                 for (Object tmq : gh.getListgiohang()) {
                     String[] t = tmq.toString().split("\\$");
                     if (taikhoan.equals(t[0])) {
@@ -180,7 +178,6 @@ public class xemhangconterler extends indexconterler{
                     for (Object tmq : gh.getListgiohang()) {
                         pw.println(tmq.toString());
                     }
-                    System.out.println("" + sohang);
                     mess += "Thêm Vào Giỏ Hàng Thành Công";
                     JOptionPane.showMessageDialog(view, mess);
                     mess = "";

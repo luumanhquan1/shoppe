@@ -68,6 +68,12 @@ public class giohangview extends javax.swing.JFrame {
         thongbao = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         btnmuangay = new javax.swing.JButton();
+        formthanhtoan = new javax.swing.JPanel();
+        txttongtienhang = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        btnmuahang = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        txtsohang = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -407,7 +413,58 @@ public class giohangview extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addComponent(btnmuangay)
-                .addContainerGap(99, Short.MAX_VALUE))
+                .addContainerGap(33, Short.MAX_VALUE))
+        );
+
+        formthanhtoan.setBackground(new java.awt.Color(255, 255, 255));
+
+        txttongtienhang.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        txttongtienhang.setForeground(new java.awt.Color(255, 0, 0));
+        txttongtienhang.setText("0");
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel1.setText("đ");
+
+        btnmuahang.setBackground(new java.awt.Color(255, 51, 51));
+        btnmuahang.setText("jButton1");
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel3.setText("Tổng Tiền Hàng:");
+
+        txtsohang.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtsohang.setText("(0 số hàng)");
+
+        javax.swing.GroupLayout formthanhtoanLayout = new javax.swing.GroupLayout(formthanhtoan);
+        formthanhtoan.setLayout(formthanhtoanLayout);
+        formthanhtoanLayout.setHorizontalGroup(
+            formthanhtoanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, formthanhtoanLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtsohang)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txttongtienhang)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnmuahang)
+                .addGap(160, 160, 160))
+        );
+        formthanhtoanLayout.setVerticalGroup(
+            formthanhtoanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(formthanhtoanLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(formthanhtoanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(formthanhtoanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel1)
+                        .addComponent(txtsohang)
+                        .addComponent(jLabel3))
+                    .addGroup(formthanhtoanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txttongtienhang)
+                        .addComponent(btnmuahang)))
+                .addContainerGap(62, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -418,7 +475,9 @@ public class giohangview extends javax.swing.JFrame {
             .addComponent(thongbao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(listgiohang, javax.swing.GroupLayout.PREFERRED_SIZE, 1447, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(listgiohang, javax.swing.GroupLayout.DEFAULT_SIZE, 1447, Short.MAX_VALUE)
+                    .addComponent(formthanhtoan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(59, 59, 59))
         );
         layout.setVerticalGroup(
@@ -429,7 +488,9 @@ public class giohangview extends javax.swing.JFrame {
                 .addComponent(thongbao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(listgiohang, javax.swing.GroupLayout.PREFERRED_SIZE, 445, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(formthanhtoan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 21, Short.MAX_VALUE))
         );
 
         pack();
@@ -468,6 +529,22 @@ public class giohangview extends javax.swing.JFrame {
                 new giohangview().setVisible(true);
             }
         });
+    }
+
+    public JButton getBtnmuahang() {
+        return btnmuahang;
+    }
+
+    public JPanel getFormthanhtoan() {
+        return formthanhtoan;
+    }
+
+    public JLabel getjLabel2() {
+        return jLabel2;
+    }
+
+    public JLabel getTxttongtienhang() {
+        return txttongtienhang;
     }
 
     public JCheckBox getCb1() {
@@ -617,6 +694,7 @@ public class giohangview extends javax.swing.JFrame {
     private javax.swing.JLabel btncong1;
     private javax.swing.JLabel btncong2;
     private javax.swing.JLabel btncong4;
+    private javax.swing.JButton btnmuahang;
     private javax.swing.JButton btnmuangay;
     private javax.swing.JLabel btntru1;
     private javax.swing.JLabel btntru2;
@@ -627,7 +705,10 @@ public class giohangview extends javax.swing.JFrame {
     private javax.swing.JPanel formhang1;
     private javax.swing.JPanel formhang2;
     private javax.swing.JPanel formhang4;
+    private javax.swing.JPanel formthanhtoan;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane listgiohang;
@@ -636,12 +717,14 @@ public class giohangview extends javax.swing.JFrame {
     private javax.swing.JLabel txtgia1;
     private javax.swing.JLabel txtgia2;
     private javax.swing.JLabel txtgia4;
+    private javax.swing.JLabel txtsohang;
     private javax.swing.JLabel txtsoluong1;
     private javax.swing.JLabel txtsoluong2;
     private javax.swing.JLabel txtsoluong4;
     private javax.swing.JLabel txttengiohang1;
     private javax.swing.JLabel txttengiohang2;
     private javax.swing.JLabel txttengiohang4;
+    private javax.swing.JLabel txttongtienhang;
     private javax.swing.JLabel txttratien1;
     private javax.swing.JLabel txttratien2;
     private javax.swing.JLabel txttratien4;
